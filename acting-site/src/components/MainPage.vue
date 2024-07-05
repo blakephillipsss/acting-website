@@ -3,58 +3,54 @@
     <div class="main-container">
         <div class="container-one">
             <div class="profile">
-                <img src="../assets/headshot.jpg" alt="" class="">
+                <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
                 <h1>Blake H. Phillips</h1>
                 <p>Actor | Writer</p>
-
             </div>
-            <div class="external-links">
-                <a href="">
-                    <div class="link">
-                        <img src="../assets/imdb.png" alt="">
-                        <h2>IMDB</h2>
-                        
-                    </div>
-                    <div class="link">
-                        <img src="../assets/ig.png" alt="">
-                        <h2>Instagram</h2>
-                        
-                    </div>
-                    <div class="link">
-                        <img src="../assets/yt.png" alt="">
-                        <h2>Youtube</h2>
-                        
-                    </div>
-                    <div class="link">
-                        <img src="../assets/li.png" alt="">
-                        <h2>LinkedIn</h2>
-                        
-                    </div>
-                </a>
+            <div class="button-container">
+                <div class="demos-button">
+                    <a href="">Demo Footage and Character Clips</a>
+                </div>
+                <div class="demos-button">
+                    <a href="">Acting Resume</a>
+                </div>
             </div>
         </div>
         <div class="container-two">
             <div class="about-me">
                 <h1>About Blake</h1>
                 <p>Blake H. Phillips is an emerging talent in the world of acting and writing, driven by a passion for storytelling and a commitment to exploring the human condition. With a dedication to his craft, Blake is rapidly making a name for himself as a versatile actor capable of delivering powerful performances across a range of genres. 
-                    As an actor, Blake immerses himself in each role, bringing characters to life with authenticity and depth. His ability to convey complex emotions and connect with audiences has earned him recognition and praise in the industry. Whether portraying a dramatic lead or adding a touch of humor to a scene, Blake's performances are marked by a genuine enthusiasm and a strong work ethic.
-                    In addition to his acting endeavors, Blake is also an accomplished writer. His writing journey is fueled by a deep love for crafting narratives that resonate with readers and viewers alike. Through his writing, Blake aims to evoke emotions, provoke thought, and inspire change, creating stories that leave a lasting impact.
-                    Blake H. Phillips believes in the transformative power of storytelling and is dedicated to contributing meaningful work to the entertainment industry. As he continues to grow and evolve in his career, Blake looks forward to collaborating with fellow artists, learning from each experience, and making a significant impact through his art.
                     Join Blake on his exciting journey as he strives to make his mark as both an actor and a writer, sharing incredible stories with the world.</p>
             </div>
             <div class="recent-projects">
                 <h1>Recent Seen In</h1>
                 <div class="films">
-                    <img src="oh_sadie.png" alt="Oh, Sadie Poster">
-                    <img src="WOR.png" alt="When Olive Returned Poster">
+                    <a href="">
+                        <img src="../assets/WOR.jpg" alt="">
+                        <p>When Olive Returned (Supporting)</p>
+                    </a>
+                    <a href="">
+                        <img src="../assets/oh_sadie.jpg" alt="">
+                        <p>Oh, Sadie! (Supporting)</p>
+                    </a>
+                    
                 </div>
             </div>
-            <div class="button-container">
-                <div class="clips-and-demos">
-                    <a href="">Demo Footage and Character Clips</a>
-                </div>
-                <div>
-                    <a href="">Acting Resume</a>
+            <div class="external-links">
+                <h1>Socials</h1>
+                <div class="socials">
+                    <a href="">
+                        <img src="../assets/imdb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/ig.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/yt.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/li.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -78,12 +74,73 @@ export default {
     .main-container{
         display: flex;
         flex-direction: row;
-        background-color: #ffffff ;
+        background-color: #e4d6d6 ;
+        border-radius: 25px;
     }
     .container-one{
-        background-color: blue;
+        background-color: rgb(130, 184, 255);
+        width: 30%;
+        padding: .5%;
+        border-radius: 25px;
+    }
+    .profile img{
+        height: 40rem;
+    }
+    .profile p{
+        font-size: 1.2rem;
+    }
+    .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .demos-button{
+        background-color: rgb(59, 144, 255);
+        margin: 2%;
+        padding: 12px;
+        border-radius: 15px;
+    }
+    .demos-button a{
+        text-decoration: none;
+        color: #2c3e50;
     }
     .container-two{
-        background-color: aquamarine;
+        background-color: rgb(184, 247, 226);
+        width: 70%;
+        margin: 2.5%;
+        border-radius: 25px;
+    }
+    .about-me{
+        text-align: left;
+    }
+    .films{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .films a{
+        text-align: center;
+        margin: 1rem;
+    }
+    .films img{
+        height: 25rem;
+        padding: 1rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .socials{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .socials a{
+        padding: .5%;
+    }
+    .socials img{
+        height: 2.75rem;
     }
 </style>
