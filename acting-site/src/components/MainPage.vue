@@ -3,16 +3,32 @@
     <div class="main-container">
         <div class="container-one">
             <div class="profile">
-                <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
                 <h1>Blake H. Phillips</h1>
-                <p>Actor | Writer</p>
+                <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
             </div>
             <div class="button-container">
                 <div class="demos-button">
-                    <a href="">Demo Footage and Character Clips</a>
+                    <a href="">Demo Footage and Clips</a>
                 </div>
                 <div class="demos-button">
-                    <a href="">Acting Resume</a>
+                    <a href="">Resume</a>
+                </div>
+            </div>
+            <div class="external-links">
+                <h1>Socials</h1>
+                <div class="socials">
+                    <a href="">
+                        <img src="../assets/imdb.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/ig.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/yt.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../assets/li.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -36,23 +52,6 @@
                     
                 </div>
             </div>
-            <div class="external-links">
-                <h1>Socials</h1>
-                <div class="socials">
-                    <a href="">
-                        <img src="../assets/imdb.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/ig.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/yt.png" alt="">
-                    </a>
-                    <a href="">
-                        <img src="../assets/li.png" alt="">
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
     
@@ -74,41 +73,47 @@ export default {
     .main-container{
         display: flex;
         flex-direction: row;
-        background-color: #e4d6d6 ;
+        background-color: #96C5F7  ;
         border-radius: 25px;
     }
     .container-one{
-        background-color: rgb(130, 184, 255);
+        background-color: #304C89;
         width: 30%;
         padding: .5%;
         border-radius: 25px;
+        margin: .5%;
+    }
+    .profile h1{
+        color: #f2f4ff;
+        font-family: "Bodoni MT Condensed", serif;
+        font-size: 2.8rem;
     }
     .profile img{
         height: 40rem;
     }
-    .profile p{
-        font-size: 1.2rem;
-    }
     .button-container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
     .demos-button{
-        background-color: rgb(59, 144, 255);
+        background-color: #595758;
         margin: 2%;
         padding: 12px;
         border-radius: 15px;
+        width: 100%;
     }
     .demos-button a{
         text-decoration: none;
-        color: #2c3e50;
+        color: #f2f4ff;
+        align-items: center;
+        justify-content: center;
     }
     .container-two{
-        background-color: rgb(184, 247, 226);
+        background-color: #F2F4FF;
         width: 70%;
-        margin: 2.5%;
+        margin: 0.5%;
         border-radius: 25px;
     }
     .about-me{
