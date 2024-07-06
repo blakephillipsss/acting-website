@@ -60,15 +60,19 @@
             <div class="youtube-video">
                 <h1>Demo and Media</h1>
                 <!-- Embed YouTube Videos -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
         <div id="resume-section" class="container-four">
             <div class="pdfs">
                 <h1>Resume</h1>
-                <object :data="pdfUrl" type="application/pdf" width="100%" height="500px">
-                    <p>Unable to display PDF file. <a :href="pdfUrl">Download</a> instead.</p>
-                </object>
+                <div class="pdf-wrapper">
+                    <object :data="pdfUrl" type="application/pdf" width="100%" height="500px">
+                        <p>Unable to display PDF file. <a :href="pdfUrl">Download</a> instead.</p>
+                    </object>
+                </div>
             </div>
         </div>
     </div>
@@ -88,21 +92,33 @@ export default {
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    },
+    handleResize() {
+      this.updatePdfZoom();
+    },
+    updatePdfZoom() {
+      const pdfObject = document.querySelector('.pdf-wrapper object');
+      if (pdfObject) {
+        pdfObject.style.zoom = '100%';
+        pdfObject.style.height = `${pdfObject.offsetWidth * 1.3}px`; // Adjust this multiplier as needed
+      }
     }
   },
   mounted() {
-    // Add animation classes after component is mounted
     this.$nextTick(() => {
       document.querySelectorAll('.container-one, .container-two, .container-three, .container-four').forEach((el, index) => {
         setTimeout(() => {
           el.classList.add('fade-in');
         }, index * 200);
       });
+      this.updatePdfZoom();
+      window.addEventListener('resize', this.handleResize);
     });
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.handleResize);
   }
 }
-
-
 </script>
 
 <!--CSS code-->
@@ -270,6 +286,7 @@ export default {
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 .video-wrapper iframe {
@@ -283,6 +300,22 @@ export default {
 /* Resume Styles */
 .container-four h1 {
   color: #f2f4ff;
+}
+
+/* PDF Styles */
+.pdf-wrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 129.4%; /* Aspect ratio for A4 paper */
+  position: relative;
+  overflow: hidden;
+}
+.pdf-wrapper object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Animation Styles */
@@ -299,6 +332,10 @@ export default {
 @media (max-width: 768px) {
   .container-one, .container-two, .container-three, .container-four {
     max-width: 100%;
+    width: 100%;
+  }
+  .video-wrapper, .pdf-wrapper {
+    width: 100%;
   }
 }
 </style>
