@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vercel/blob": "^0.23.4",
+    "@vercel/speed-insights": "^1.0.12",
     "core-js": "^3.8.3",
     "vercel": "^34.3.0",
     "vue": "^3.2.13"
