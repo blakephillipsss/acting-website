@@ -61,7 +61,7 @@
                 <h1>Demo and Media</h1>
                 <!-- Embed YouTube Videos -->
                 <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe :src="youtubeEmbedUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -79,46 +79,46 @@
 </template>
 
 <!--JS code-->
-<script>
-export default {
-    data() {
-        return {
-            pdfUrl: 'https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf'
-        }
-  },
-  methods: {
-    scrollTo(elementId) {
-      const element = document.getElementById(elementId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    },
-    handleResize() {
-      this.updatePdfZoom();
-    },
-    updatePdfZoom() {
-      const pdfObject = document.querySelector('.pdf-wrapper object');
-      if (pdfObject) {
-        pdfObject.style.zoom = '100%';
-        pdfObject.style.height = `${pdfObject.offsetWidth * 1.3}px`; // Adjust this multiplier as needed
-      }
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      document.querySelectorAll('.container-one, .container-two, .container-three, .container-four').forEach((el, index) => {
-        setTimeout(() => {
-          el.classList.add('fade-in');
-        }, index * 200);
-      });
-      this.updatePdfZoom();
-      window.addEventListener('resize', this.handleResize);
-    });
-  },
-  beforeUnmount() {
-    window.removeEventListener('resize', this.handleResize);
+<script setup>
+import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+
+const pdfUrl = ref('https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf')
+const youtubeEmbedUrl = ref('https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd')
+
+const scrollTo = (elementId) => {
+  const element = document.getElementById(elementId)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' })
   }
 }
+
+const updatePdfZoom = () => {
+  const pdfObject = document.querySelector('.pdf-wrapper object')
+  if (pdfObject) {
+    pdfObject.style.zoom = '100%'
+    pdfObject.style.height = `${pdfObject.offsetWidth * 1.3}px` // Adjust this multiplier as needed
+  }
+}
+
+const handleResize = () => {
+  updatePdfZoom()
+}
+
+onMounted(() => {
+  nextTick(() => {
+    document.querySelectorAll('.container-one, .container-two, .container-three, .container-four').forEach((el, index) => {
+      setTimeout(() => {
+        el.classList.add('fade-in')
+      }, index * 200)
+    })
+    updatePdfZoom()
+    window.addEventListener('resize', handleResize)
+  })
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResize)
+})
 </script>
 
 <!--CSS code-->
