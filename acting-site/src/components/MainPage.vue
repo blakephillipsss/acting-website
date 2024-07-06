@@ -97,6 +97,7 @@
 <!--JS code-->
 <script setup>
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 const pdfUrl = ref('https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf')
 const youtubeEmbedUrl = ref('https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd')

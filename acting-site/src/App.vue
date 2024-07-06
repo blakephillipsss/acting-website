@@ -1,17 +1,14 @@
 <template>
   <MainPage/>
-  <SpeedInsights />
 </template>
 
 <script>
 import MainPage from './components/MainPage.vue';
-import { SpeedInsights } from "@vercel/speed-insights/vue"
 
 export default {
   name: 'App',
   components: {
-    MainPage,
-    SpeedInsights
+    MainPage
   }
 }
 </script>
