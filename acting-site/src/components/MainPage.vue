@@ -24,13 +24,13 @@
                         <img src="../assets/imdb.png" alt="">
                     </a>
                     <a href="https://www.instagram.com/blakehphillips/">
-                        <img src="../assets/ig.png" alt="">
+                        <img src="../assets/instagram.png" alt="">
                     </a>
                     <a href="https://www.youtube.com/@blakehphillips">
-                        <img src="../assets/yt.png" alt="">
+                        <img src="../assets/youtube.png" alt="">
                     </a>
                     <a href="https://www.linkedin.com/in/bhp42/">
-                        <img src="../assets/li.png" alt="">
+                        <img src="../assets/linkedin.png" alt="">
                     </a>
                 </div>
             </div>
@@ -39,8 +39,8 @@
         <div class="container-two">
             <div class="about-me">
                 <h1>About Blake</h1>
-                <p>Blake H. Phillips is an emerging talent in the world of acting and writing, driven by a passion for storytelling and a commitment to exploring the human condition. With a dedication to his craft, Blake is rapidly making a name for himself as a versatile actor capable of delivering powerful performances across a range of genres. 
-                    Join Blake on his exciting journey as he strives to make his mark as both an actor and a writer, sharing incredible stories with the world.</p>
+                <p>Blake H. Phillips is an emerging actor out of Toronto, Canada. With a dedication to his craft, Blake is rapidly making a name for himself as a versatile actor capable of delivering powerful, natural performances on camera. 
+                    Join Blake on his exciting journey as he continues to rise throughout his acting career.</p>
             </div>
             <div class="recent-projects">
                 <h1>Recently Seen In</h1>
@@ -75,6 +75,22 @@
                 </div>
             </div>
         </div>
+        <div class="attributions-section">
+      <button @click="toggleAttributions" class="attribution-toggle">
+        {{ showAttributions ? 'Hide Attributions' : 'Show Attributions' }}
+      </button>
+      <div v-if="showAttributions" class="attribution-content">
+        <h3>Attributions</h3>
+        <ul>
+          <li>Fonts: Bodoni MT Condensed</li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/imdb" title="imdb icons">Imdb icons created by Freepik - Flaticon</a></li>
+          <!-- Add more attribution items as needed -->
+        </ul>
+      </div>
+    </div>
     </div>
 </template>
 
@@ -119,6 +135,12 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize)
 })
+
+const showAttributions = ref(false)
+
+const toggleAttributions = () => {
+  showAttributions.value = !showAttributions.value
+}
 </script>
 
 <!--CSS code-->
@@ -341,5 +363,58 @@ onBeforeUnmount(() => {
   .video-wrapper, .pdf-wrapper {
     width: 100%;
   }
+}
+
+/* Attributions Section Styles */
+.attributions-section {
+  width: 100%;
+  padding: 10px;
+  background-color: #304C89;
+  color: #f2f4ff;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.attribution-toggle {
+  background-color: #595758;
+  color: #f2f4ff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.attribution-toggle:hover {
+  background-color: #7a7879;
+}
+
+.attribution-content {
+  margin-top: 10px;
+}
+
+.attribution-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.attribution-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.attribution-content li {
+  margin-bottom: 5px;
+}
+
+.attribution-content a {
+  color: #96C5F7;
+  text-decoration: none;
+}
+
+.attribution-content a:hover {
+  text-decoration: underline;
 }
 </style>
