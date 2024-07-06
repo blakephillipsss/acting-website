@@ -63,7 +63,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="container-four">
+        <div id="resume-section" class="container-four">
             <div class="pdfs">
                 <h1>Resume</h1>
                 <object :data="pdfUrl" type="application/pdf" width="100%" height="500px">
@@ -79,7 +79,7 @@
 export default {
     data() {
         return {
-            pdfUrl: '../../public/Blake H. Phillips Resume.pdf'
+            pdfUrl: 'https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf'
         }
   },
   methods: {
@@ -107,123 +107,165 @@ export default {
 
 <!--CSS code-->
 <style scoped>
-    img{
-        height:20px;
-    }
-    .main-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        background-color: #96C5F7  ;
-        border-radius: 25px;
-        width: 100%;
-    }
-    .container-one, .container-two, .container-three, .container-four{
-        flex: 1;
-        min-width: 350px;
-        margin: 10px;
-    }
-    .container-one{
-        background-color: #304C89;
-        max-width: 30%;
-        padding: 1%;
-        border-radius: 25px;
-        margin: .5%;
-        margin-top: 2%;
-    }
-    .profile h1{
-        color: #f2f4ff;
-        font-family: "Bodoni MT Condensed", serif;
-        font-size: 2.8rem;
-    }
-    .profile img{
-        height: auto;
-        max-width: 100%;
-    }
-    .profile p{
-        color: #f2f4ff;
-        size: 1.2rem;
-    }
-    .profile a{
-        text-decoration: underline;
-        color: #f2f4ff;
-    }
-    .button-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .demos-button{
-        background-color: #595758;
-        margin: 2%;
-        padding: 12px;
-        border-radius: 15px;
-        width: 100%;
-    }
-    .demos-button a{
-        text-decoration: none;
-        color: #f2f4ff;
-        align-items: center;
-        justify-content: center;
-    }
-    .container-two{
-        background-color: #F2F4FF;
-        max-width: 34%;
-        margin: 0.5%;
-        border-radius: 25px;
-    }
-    .about-me h1{
-        text-align: center;
-    }
-    .about-me p{
-        text-align: justify;
-        margin: 2%;
-    }
-    .films{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .films a{
-        text-align: center;
-        margin: 1rem;
-        text-decoration: underline;
-        color: #2c3e50;
-    }
-    .films img{
-        height: 20rem;
-        padding: 1rem;
-        display: block;
-        margin: 0 auto;
-    }
-    .socials{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .socials a{
-        margin-top: 3%;
-        padding: .5%;
-    }
-    .socials img{
-        height: 2.75rem;
-    }
-    .container-three{
-        background-color: #F2F4FF;
-        width: 36%;
-        margin: 0.5%;
-        border-radius: 25px;
-    }
-    .container-three iframe{
-        max-width: 100%;
-        height: auto;
-    }
-    .video-wrapper {
+/* Global Styles */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #96C5F7;
+  border-radius: 25px;
+  width: 100%;
+}
+
+/* Container Styles */
+.container-one, .container-two, .container-three, .container-four {
+  flex: 1;
+  min-width: 350px;
+  margin: 10px;
+  border-radius: 25px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.container-one {
+  background-color: #304C89;
+  max-width: 30%;
+  padding: 1%;
+  margin: .5% 0.5% 2%;
+}
+
+.container-two {
+  background-color: #F2F4FF;
+  max-width: 34%;
+  margin: 0.5%;
+}
+
+.container-three, .container-four {
+  width: 36%;
+  margin: 0.5%;
+}
+
+.container-three {
+  background-color: #F2F4FF;
+}
+
+.container-four {
+  background-color: #304C89;
+}
+
+/* Profile Styles */
+.profile h1 {
+  color: #f2f4ff;
+  font-family: "Bodoni MT Condensed", serif;
+  font-size: 2.8rem;
+}
+
+.profile img {
+  height: auto;
+  max-width: 100%;
+}
+
+.profile p, .profile a {
+  color: #f2f4ff;
+}
+
+.profile p {
+  font-size: 1.2rem;
+}
+
+.profile a {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.demos-button {
+  background-color: #595758;
+  margin: 2%;
+  padding: 12px;
+  border-radius: 15px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.demos-button:hover {
+  background-color: #7a7879;
+}
+
+.demos-button a {
+  text-decoration: none;
+  color: #f2f4ff;
+}
+
+/* About Me Styles */
+.about-me h1 {
+  text-align: center;
+}
+
+.about-me p {
+  text-align: justify;
+  margin: 2%;
+}
+
+/* Films Styles */
+.films {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.films a {
+  text-align: center;
+  margin: 1rem;
+  text-decoration: underline;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+.films a:hover {
+  transform: scale(1.05);
+}
+
+.films img {
+  height: 20rem;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Social Media Styles */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  margin-top: 3%;
+  padding: .5%;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.1);
+}
+
+.socials img {
+  height: 2.75rem;
+}
+
+/* Video Styles */
+.video-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
@@ -238,43 +280,25 @@ export default {
   height: 100%;
 }
 
-/* Animation styles */
+/* Resume Styles */
+.container-four h1 {
+  color: #f2f4ff;
+}
+
+/* Animation Styles */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.container-one, .container-two, .container-three, .container-four {
-  opacity: 0;
-  transform: translateY(20px);
 }
 
 .fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Hover effects */
-.demos-button {
-  transition: background-color 0.3s ease;
-}
-
-.demos-button:hover {
-  background-color: #7a7879;
-}
-
-.films a {
-  transition: transform 0.3s ease;
-}
-
-.films a:hover {
-  transform: scale(1.05);
-}
-
-.socials a {
-  transition: transform 0.3s ease;
-}
-
-.socials a:hover {
-  transform: scale(1.1);
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container-one, .container-two, .container-three, .container-four {
+    max-width: 100%;
+  }
 }
 </style>
