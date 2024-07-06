@@ -7,7 +7,7 @@
                 <h1>Blake H. Phillips</h1>
                 <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
                 <p>Non-Union Toronto Actor</p>
-                <a href="mailto:actor@blakehphillips.com">actor@blakehphillips.com</a>
+                <a href="mailto:acting@blakehphillips.com">acting@blakehphillips.com</a>
                 <p>+1 (416) 818-1158</p>
             </div>
             <div class="button-container">
