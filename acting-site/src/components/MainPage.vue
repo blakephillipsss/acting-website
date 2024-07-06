@@ -1,11 +1,14 @@
 <!--HTML code-->
-<template> 
-    <head>Blake H. Phillips</head>
+<template>
+    <head><title>Blake H. Phillips</title></head>
     <div class="main-container">
         <div class="container-one">
             <div class="profile">
                 <h1>Blake H. Phillips</h1>
                 <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
+                <p>Non-Union Toronto Actor</p>
+                <a href="mailto:actor@blakehphillips.com">actor@blakehphillips.com</a>
+                <p>+1 (416) 818-1158</p>
             </div>
             <div class="button-container">
                 <div class="demos-button">
@@ -31,6 +34,7 @@
                     </a>
                 </div>
             </div>
+            
         </div>
         <div class="container-two">
             <div class="about-me">
@@ -54,7 +58,7 @@
         </div>
         <div class="container-three">
             <div class="youtube-video">
-                <h1>Demo Footage and Character Clips</h1>
+                <h1>Demo and Media</h1>
                 <!-- Embed YouTube Videos -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -63,11 +67,11 @@
             <div class="pdfs">
                 <h1>Resume</h1>
                 <!-- Embed PDF -->
-                <iframe src="../assets/Blake H. Phillips Resume.pdf" width="100%" height="500px"></iframe>
+                <iframe src="../../public/Blake H. Phillips Resume.pdf" width="100%" height="500px">pdf</iframe>
+                 <!-- <object data="../assets/Blake H. Phillips Resume.pdf" class="pdf" width="100%" height="500px"></object> -->
             </div>
         </div>
     </div>
-    
 </template>
 
 <!--JS code-->
@@ -75,6 +79,7 @@
 export default {
     
 }
+
 
 </script>
 
@@ -87,15 +92,23 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
         background-color: #96C5F7  ;
         border-radius: 25px;
+        width: 100%;
+    }
+    .container-one, .container-two, .container-three, .container-four{
+        flex: 1;
+        min-width: 350px;
+        margin: 10px;
     }
     .container-one{
         background-color: #304C89;
-        width: 30%;
-        padding: .5%;
+        max-width: 30%;
+        padding: 1%;
         border-radius: 25px;
         margin: .5%;
+        margin-top: 2%;
     }
     .profile h1{
         color: #f2f4ff;
@@ -103,7 +116,16 @@ export default {
         font-size: 2.8rem;
     }
     .profile img{
-        height: 40rem;
+        height: auto;
+        max-width: 100%;
+    }
+    .profile p{
+        color: #f2f4ff;
+        size: 1.2rem;
+    }
+    .profile a{
+        text-decoration: underline;
+        color: #f2f4ff;
     }
     .button-container{
         display: flex;
@@ -126,7 +148,7 @@ export default {
     }
     .container-two{
         background-color: #F2F4FF;
-        width: 30%;
+        max-width: 34%;
         margin: 0.5%;
         border-radius: 25px;
     }
@@ -147,11 +169,11 @@ export default {
     .films a{
         text-align: center;
         margin: 1rem;
-        text-decoration: none;
+        text-decoration: underline;
         color: #2c3e50;
     }
     .films img{
-        height: 25rem;
+        height: 20rem;
         padding: 1rem;
         display: block;
         margin: 0 auto;
@@ -174,5 +196,9 @@ export default {
         width: 36%;
         margin: 0.5%;
         border-radius: 25px;
+    }
+    .container-three iframe{
+        max-width: 100%;
+        height: auto;
     }
 </style>
