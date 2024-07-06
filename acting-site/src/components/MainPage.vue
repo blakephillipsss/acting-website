@@ -318,6 +318,10 @@ onBeforeUnmount(() => {
   height: 100%;
 }
 
+.pdf-wrapper p, a{
+    color: #f2f4ff;
+}
+
 /* Animation Styles */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
