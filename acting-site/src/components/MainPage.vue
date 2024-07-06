@@ -1,5 +1,6 @@
 <!--HTML code-->
 <template> 
+    <head>Blake H. Phillips</head>
     <div class="main-container">
         <div class="container-one">
             <div class="profile">
@@ -15,18 +16,17 @@
                 </div>
             </div>
             <div class="external-links">
-                <h1>Socials</h1>
                 <div class="socials">
                     <a href="">
                         <img src="../assets/imdb.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/blakehphillips/">
                         <img src="../assets/ig.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.youtube.com/@blakehphillips">
                         <img src="../assets/yt.png" alt="">
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/bhp42/">
                         <img src="../assets/li.png" alt="">
                     </a>
                 </div>
@@ -43,14 +43,27 @@
                 <div class="films">
                     <a href="">
                         <img src="../assets/WOR.jpg" alt="">
-                        <p>When Olive Returned (Supporting)</p>
+                        <p><b>When Olive Returned (Supporting)</b></p>
                     </a>
                     <a href="">
                         <img src="../assets/oh_sadie.jpg" alt="">
-                        <p>Oh, Sadie! (Supporting)</p>
+                        <p><b>Oh, Sadie! (Supporting</b>)</p>
                     </a>
-                    
                 </div>
+            </div>
+        </div>
+        <div class="container-three">
+            <div class="youtube-video">
+                <h1>Demo Footage and Character Clips</h1>
+                <!-- Embed YouTube Videos -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="container-four">
+            <div class="pdfs">
+                <h1>Resume</h1>
+                <!-- Embed PDF -->
+                <iframe src="../assets/Blake H. Phillips Resume.pdf" width="100%" height="500px"></iframe>
             </div>
         </div>
     </div>
@@ -60,7 +73,7 @@
 <!--JS code-->
 <script>
 export default {
-
+    
 }
 
 </script>
@@ -73,6 +86,7 @@ export default {
     .main-container{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         background-color: #96C5F7  ;
         border-radius: 25px;
     }
@@ -112,12 +126,16 @@ export default {
     }
     .container-two{
         background-color: #F2F4FF;
-        width: 70%;
+        width: 30%;
         margin: 0.5%;
         border-radius: 25px;
     }
-    .about-me{
-        text-align: left;
+    .about-me h1{
+        text-align: center;
+    }
+    .about-me p{
+        text-align: justify;
+        margin: 2%;
     }
     .films{
         display: flex;
@@ -129,6 +147,8 @@ export default {
     .films a{
         text-align: center;
         margin: 1rem;
+        text-decoration: none;
+        color: #2c3e50;
     }
     .films img{
         height: 25rem;
@@ -143,9 +163,16 @@ export default {
         flex-wrap: wrap;
     }
     .socials a{
+        margin-top: 3%;
         padding: .5%;
     }
     .socials img{
         height: 2.75rem;
+    }
+    .container-three{
+        background-color: #F2F4FF;
+        width: 36%;
+        margin: 0.5%;
+        border-radius: 25px;
     }
 </style>
