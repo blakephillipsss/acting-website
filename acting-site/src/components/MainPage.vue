@@ -1,4 +1,9 @@
 <!--HTML code-->
+<!-- To-do: -->
+<!-- - Update favicon to something better -->
+<!-- - move assets to public folder -->
+<!-- - break up main page into components -->
+<!-- - write an actual about me -->
 <template>
     <head><title>Blake H. Phillips</title></head>
     <div class="main-container">
