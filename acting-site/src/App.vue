@@ -3,16 +3,16 @@
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue';
-import { inject } from "@vercel/analytics";
-inject();
+  import MainPage from './components/MainPage.vue';
+  import { inject } from "@vercel/analytics";
+  inject();
 
-export default {
-  name: 'App',
-  components: {
-    MainPage
+  export default {
+    name: 'App',
+    components: {
+      MainPage
+    }
   }
-}
 </script>
 
 <style>
