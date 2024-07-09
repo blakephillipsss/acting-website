@@ -12,7 +12,8 @@ export default {
   }
 }
 </script>
-
+  import { inject } from "@vercel/analytics";
+  inject();
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
