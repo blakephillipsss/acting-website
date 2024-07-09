@@ -4,6 +4,8 @@
 
 <script>
 import MainPage from './components/MainPage.vue';
+import { inject } from "@vercel/analytics";
+inject();
 
 export default {
   name: 'App',
@@ -12,8 +14,7 @@ export default {
   }
 }
 </script>
-  import { inject } from "@vercel/analytics";
-  inject();
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
