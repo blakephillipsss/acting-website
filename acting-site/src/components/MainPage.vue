@@ -23,13 +23,13 @@
                     <a href="">
                         <img src="../assets/imdb.png" alt="">
                     </a>
-                    <a href="https://www.instagram.com/blakehphillips/">
+                    <a href="https://www.instagram.com/blakehphillips/" target="_blank" rel="noopener noreferrer">
                         <img src="../assets/instagram.png" alt="">
                     </a>
-                    <a href="https://www.youtube.com/@blakehphillips">
+                    <a href="https://www.youtube.com/@blakehphillips" target="_blank" rel="noopener noreferrer">
                         <img src="../assets/youtube.png" alt="">
                     </a>
-                    <a href="https://www.linkedin.com/in/bhp42/">
+                    <a href="https://www.linkedin.com/in/bhp42/" target="_blank" rel="noopener noreferrer">
                         <img src="../assets/linkedin.png" alt="">
                     </a>
                 </div>
@@ -83,10 +83,10 @@
         <h3>Attributions</h3>
         <ul>
           <li>Fonts: Bodoni MT Condensed</li>
-          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a></li>
-          <li><a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons">Youtube icons created by Freepik - Flaticon</a></li>
-          <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a></li>
-          <li><a href="https://www.flaticon.com/free-icons/imdb" title="imdb icons">Imdb icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons" target="_blank" rel="noopener noreferrer">Instagram icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/youtube" title="youtube icons" target="_blank" rel="noopener noreferrer">Youtube icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons" target="_blank" rel="noopener noreferrer">Linkedin icons created by Freepik - Flaticon</a></li>
+          <li><a href="https://www.flaticon.com/free-icons/imdb" title="imdb icons" target="_blank" rel="noopener noreferrer">Imdb icons created by Freepik - Flaticon</a></li>
           <!-- Add more attribution items as needed -->
         </ul>
       </div>
