@@ -13,7 +13,7 @@
                 <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
                 <p>Non-Union Toronto Actor</p>
                 <a href="mailto:acting@blakehphillips.com">acting@blakehphillips.com</a>
-                <p>+1 (416) 818-1158</p>
+                <p>+1 (416) 818-1156</p>
             </div>
             <div class="button-container">
                 <div class="demos-button">
