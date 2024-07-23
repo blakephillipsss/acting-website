@@ -10,6 +10,7 @@
         <div class="container-one">
             <div class="profile">
                 <h1>Blake H. Phillips</h1>
+                <p>(he/him/his)</p>
                 <img src="../assets/Blake H. Phillips Headshot.jpg" alt="" class="">
                 <p>Non-Union Toronto Actor</p>
                 <a href="mailto:acting@blakehphillips.com">acting@blakehphillips.com</a>
