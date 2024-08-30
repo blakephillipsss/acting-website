@@ -26,7 +26,7 @@
             </div>
             <div class="external-links">
                 <div class="socials">
-                    <a href="">
+                    <a href="https://www.imdb.com/name/nm16436371/?ref_=ttfc_fc_cl_t11">
                         <img src="../assets/imdb.png" alt="">
                     </a>
                     <a href="https://www.instagram.com/blakehphillips/" target="_blank" rel="noopener noreferrer">
@@ -51,9 +51,9 @@
             <div class="recent-projects">
                 <h1>Recently Seen In</h1>
                 <div class="films">
-                    <a href="">
+                    <a href="https://youtu.be/APAB9h2YjFw?si=E2WHXnkXmlt8BXTa">
                         <img src="../assets/WOR.jpg" alt="">
-                        <p><b>When Olive Returned (Coming Soon!)</b></p>
+                        <p><b>When Olive Returned (Watch Now!)</b></p>
                     </a>
                     <a href="">
                         <img src="../assets/oh_sadie.jpg" alt="">
@@ -105,7 +105,7 @@
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const pdfUrl = ref('https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf')
-const youtubeEmbedUrl = ref('https://www.youtube.com/embed/TVwrKcFciSY?si=m9KMOvLB_9hqixQ1')
+const youtubeEmbedUrl = ref('https://www.youtube.com/embed/h8tvnX3IZwM?si=2Fvl9jl-dd9r5gUn')
 
 const scrollTo = (elementId) => {
   const element = document.getElementById(elementId)
