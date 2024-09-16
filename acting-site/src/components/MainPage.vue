@@ -4,17 +4,15 @@
         <div class="container-one">
             <ProfileComponent/>
             <NavComponent @scroll-to="scrollTo" />
-
-            <!-- <SocialLinks /> -->
+            <SocialsComponent/>
         </div>
+        <div class="container-two">
+          <AboutMeComponent />
+          <RecentWorkComponent />
+        </div>
+        <!-- <DemoSection :youtube-embed-url="youtubeEmbedUrl" /> -->
 
-        <!-- <AboutMe />
-
-        <RecentProjects />
-
-        <DemoSection :youtube-embed-url="youtubeEmbedUrl" />
-
-        <ResumeSection :pdf-url="pdfUrl" /> -->
+        <!-- <ResumeSection :pdf-url="pdfUrl" /> -->
     </div>
 </template>
   
@@ -22,20 +20,20 @@
     // import { ref, onMounted, onBeforeUnmount } from 'vue'
     import ProfileComponent from './ProfileComponent.vue'
     import NavComponent from './NavComponent.vue'
-    // import SocialLinks from './components/SocialLinks.vue'
-    // import AboutMe from './components/AboutMe.vue'
-    // import RecentProjects from './components/RecentProjects.vue'
-    // import DemoSection from './components/DemoSection.vue'
-    // import ResumeSection from './components/ResumeSection.vue'
+    import SocialsComponent from './SocialsComponent.vue';
+    import AboutMeComponent from './AboutMeComponent.vue'
+    import RecentWorkComponent from './RecentWorkComponent.vue'
+    // import DemoSection from './DemoSection.vue'
+    // import ResumeSection from './ResumeSection.vue'
     
     export default {
         name: 'MainPage',
         components: {
             ProfileComponent,
-            NavComponent//,
-        // SocialLinks,
-        // AboutMe,
-        // RecentProjects,
+            NavComponent,
+            SocialsComponent,
+            AboutMeComponent,
+            RecentWorkComponent//,
         // DemoSection,
         // ResumeSection
         }//,

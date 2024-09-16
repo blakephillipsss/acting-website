@@ -38,28 +38,28 @@
   }
 </script>
   
-  <style scoped>
-    /* Profile Styles */
-    .profile h1 {
-      color: #f2f4ff;
-      font-family: "Bodoni MT Condensed", serif;
-      font-size: 2.8rem;
-    }
-  
-    .profile img {
-      height: auto;
-      max-width: 100%;
-    }
-  
-    .profile p, .profile a {
-      color: #f2f4ff;
-    }
-  
-    .profile p {
-      font-size: 1.2rem;
-    }
-  
-    .profile a {
-      text-decoration: underline;
-    }
-  </style>
+<style scoped>
+  /* Profile Styles */
+  .profile h1 {
+    color: #f2f4ff;
+    font-family: "Bodoni MT Condensed", serif;
+    font-size: 2.8rem;
+  }
+
+  .profile img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .profile p, .profile a {
+    color: #f2f4ff;
+  }
+
+  .profile p {
+    font-size: 1.2rem;
+  }
+
+  .profile a {
+    text-decoration: underline;
+  }
+</style>
