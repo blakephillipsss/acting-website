@@ -45,8 +45,9 @@
         <div class="container-two">
             <div class="about-me">
                 <h1>About Blake</h1>
-                <p>Blake H. Phillips is an emerging actor out of Toronto, Canada. With a dedication to his craft, Blake is rapidly making a name for himself as a versatile actor capable of delivering powerful, natural performances on camera. 
-                    Join Blake on his exciting journey as he continues to rise throughout his acting career.</p>
+                <p>Blake H. Phillips is a Canadian actor and writer based out of Toronto. Blake background in traditional and musical
+                theatre has allowed him to come into his own as a convincing and exciting film actor. You can find Blake constantly working on his craft
+                to ensure he's bringing life to his latest roles. Please reach out via email for casting inquiries.</p>
             </div>
             <div class="recent-projects">
                 <h1>Recently Seen In</h1>
