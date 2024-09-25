@@ -105,7 +105,7 @@
 import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
 
 const pdfUrl = ref("https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Aug%20'24%20Resume-nUVBzuokngQFzQbn1swu6y31A48tZa.pdf")
-const youtubeEmbedUrl = ref('https://www.youtube.com/embed/h8tvnX3IZwM?si=2Fvl9jl-dd9r5gUn')
+const youtubeEmbedUrl = ref('https://www.youtube.com/embed/j_Mwf_5Li3k?si=rV16PEZumwtndrOx')
 
 const scrollTo = (elementId) => {
   const element = document.getElementById(elementId)
