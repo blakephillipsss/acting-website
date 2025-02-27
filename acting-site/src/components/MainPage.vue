@@ -77,11 +77,11 @@
 /* Container Styles */
 .container-one, .container-two, .container-three, .container-four {
   flex: 1;
-  min-width: 350px;
+  min-width: 309px;
   margin: 10px;
   border-radius: 25px;
   /* opacity: 0; */
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
 }
 
 .container-one {
@@ -109,9 +109,6 @@
 .container-four {
   background-color: #304C89;
 }
-
-/* PDF Styles */
-
 
 /* Animation Styles */
 @keyframes fadeIn {
