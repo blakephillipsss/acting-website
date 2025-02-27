@@ -33,8 +33,9 @@
         </div>
         
 
-        
+        <AttributionComponent/>
     </div>
+    
 </template>
   
 <script>
@@ -46,6 +47,7 @@
     import PhotoGalleryComponent from './PhotoGalleryComponent.vue';
     import VideoComponent from './VideoComponent.vue';
     import ResumeComponent from './ResumeComponent.vue'
+    import AttributionComponent from './AttributionComponent.vue';
     
     export default {
         name: 'MainPage',
@@ -57,7 +59,8 @@
             FilmPosterComponent,
             PhotoGalleryComponent,
             VideoComponent,
-            ResumeComponent
+            ResumeComponent,
+            AttributionComponent
         }
     }
 </script>
