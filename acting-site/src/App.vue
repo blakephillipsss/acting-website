@@ -5,8 +5,8 @@
 
 <script>
   import MainPage from './components/MainPage.vue';
-  import { inject } from "@vercel/analytics";
-  inject();
+  // import { inject } from "@vercel/analytics";
+  // inject();
 
   export default {
     name: 'App',

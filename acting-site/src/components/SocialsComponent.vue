@@ -5,13 +5,13 @@
                 <img :src="require('@/assets/imdb.png')" alt="IMDB" />
             </a>
             <a :href=igURL>
-                <img :src="require('@/assets/ig.png')" alt="Instagram" />
+                <img :src="require('@/assets/instagram.png')" alt="Instagram" />
             </a>
             <a :href=ytURL>
-                <img :src="require('@/assets/yt.png')" alt="Youtube" />
+                <img :src="require('@/assets/youtube.png')" alt="Youtube" />
             </a>
             <a :href=liURL>
-                <img :src="require('@/assets/li.png')" alt="LinkedIn" />
+                <img :src="require('@/assets/linkedin.png')" alt="LinkedIn" />
             </a>
         </div>
     </div>
