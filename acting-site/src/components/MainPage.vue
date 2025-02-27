@@ -8,23 +8,44 @@
         </div>
         <div class="container-two">
           <AboutMeComponent />
-          <RecentWorkComponent />
+          <h1>Recently Seen In</h1>
+          <FilmPosterComponent 
+                filmImage="WOR.jpg" 
+                filmTitle="When Olive Returned (Click to watch on YouTube)" 
+                filmURL="https://www.youtube.com/watch?v=APAB9h2YjFw&t=4s"
+            />
+            <FilmPosterComponent 
+                filmImage="oh_sadie.jpg" 
+                filmTitle="Oh, Sadie! (Coming Soon)" 
+                filmURL=""
+            />
         </div>
-        <!-- <DemoSection :youtube-embed-url="youtubeEmbedUrl" /> -->
+        <div class="container-three" id="media-section">
+          <h1>Demo Footage and Photos</h1>
+          <!-- Main Demo Tape -->
+          <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/j_Mwf_5Li3k?si=rV16PEZumwtndrOx"/>
+          <PhotoGalleryComponent/>
+        </div>
+        <div class="container-four" id="resume-section">
+          <ResumeComponent pdfUrl="https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Dec%20'24%20Resume-KTP0ab3Bg1S0bB8C1AMusmkdtXL48Z.pdf"/>
 
-        <!-- <ResumeSection :pdf-url="pdfUrl" /> -->
+
+        </div>
+        
+
+        
     </div>
 </template>
   
 <script>
-    // import { ref, onMounted, onBeforeUnmount } from 'vue'
     import ProfileComponent from './ProfileComponent.vue'
     import NavComponent from './NavComponent.vue'
     import SocialsComponent from './SocialsComponent.vue';
     import AboutMeComponent from './AboutMeComponent.vue'
-    import RecentWorkComponent from './RecentWorkComponent.vue'
-    // import DemoSection from './DemoSection.vue'
-    // import ResumeSection from './ResumeSection.vue'
+    import FilmPosterComponent from './FilmPosterComponent.vue';
+    import PhotoGalleryComponent from './PhotoGalleryComponent.vue';
+    import VideoComponent from './VideoComponent.vue';
+    import ResumeComponent from './ResumeComponent.vue'
     
     export default {
         name: 'MainPage',
@@ -33,31 +54,11 @@
             NavComponent,
             SocialsComponent,
             AboutMeComponent,
-            RecentWorkComponent//,
-        // DemoSection,
-        // ResumeSection
-        }//,
-        // setup() {
-        // const pdfUrl = ref('https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Resume-DNDlhAd7cSMZ6Q31IVzXjDLzVjt622.pdf')
-        // const youtubeEmbedUrl = ref('https://www.youtube.com/embed/wIjbAvhwO1k?si=XfR5-tNOVJi8AJcd')
-    
-        // const scrollTo = (elementId) => {
-        //     const element = document.getElementById(elementId)
-        //     if (element) {
-        //     element.scrollIntoView({ behavior: 'smooth' })
-        //     }
-        // }
-    
-        // onMounted(() => {
-        //     // Fade-in animation logic
-        // })
-    
-        // return {
-        //     pdfUrl,
-        //     youtubeEmbedUrl,
-        //     scrollTo
-        // }
-        // }
+            FilmPosterComponent,
+            PhotoGalleryComponent,
+            VideoComponent,
+            ResumeComponent
+        }
     }
 </script>
 
@@ -109,103 +110,8 @@
   background-color: #304C89;
 }
 
-/* About Me Styles */
-.about-me h1 {
-  text-align: center;
-}
-
-.about-me p {
-  text-align: justify;
-  margin: 2%;
-}
-
-/* Films Styles */
-.films {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.films a {
-  text-align: center;
-  margin: 1rem;
-  text-decoration: underline;
-  color: #2c3e50;
-  transition: transform 0.3s ease;
-}
-
-.films a:hover {
-  transform: scale(1.05);
-}
-
-.films img {
-  height: 20rem;
-  padding: 1rem;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Social Media Styles */
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.socials a {
-  margin-top: 3%;
-  padding: .5%;
-  transition: transform 0.3s ease;
-}
-
-.socials a:hover {
-  transform: scale(1.1);
-}
-
-.socials img {
-  height: 2.75rem;
-}
-
-/* Video Styles */
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  width: 100%;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Resume Styles */
-.container-four h1 {
-  color: #f2f4ff;
-}
-
 /* PDF Styles */
-.pdf-wrapper {
-  width: 100%;
-  height: 0;
-  padding-bottom: 129.4%; /* Aspect ratio for A4 paper */
-  position: relative;
-  overflow: hidden;
-}
-.pdf-wrapper object {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 /* Animation Styles */
 @keyframes fadeIn {

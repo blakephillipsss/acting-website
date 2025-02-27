@@ -1,10 +1,10 @@
 <template>
   <div class="button-container">
     <div class="nav-button">
-      <a href="#media-section" @click.prevent="scrollTo('media-section')">Demo Footage and Photos</a>
+      <a href="#resume-section" @click.prevent="scrollTo('resume-section')">Resume</a>
     </div>
     <div class="nav-button">
-      <a href="#resume-section" @click.prevent="scrollTo('resume-section')">Resume</a>
+      <a href="#media-section" @click.prevent="scrollTo('media-section')">Demo Footage and Photos</a>
     </div>
   </div>
 </template>
