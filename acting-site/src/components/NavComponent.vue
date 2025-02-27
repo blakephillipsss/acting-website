@@ -19,29 +19,29 @@
 </script>
   
 <style scoped>
-/* Button Styles */
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
+  /* Button Styles */
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-.nav-button {
-  background-color: #595758;
-  margin: 2%;
-  padding: 12px;
-  border-radius: 15px;
-  width: 100%;
-  transition: background-color 0.3s ease;
-}
+  .nav-button {
+    background-color: #595758;
+    margin: 2%;
+    padding: 12px;
+    border-radius: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
 
-.nav-button:hover {
-  background-color: #7a7879;
-}
+  .nav-button:hover {
+    background-color: #7a7879;
+  }
 
-.nav-button a {
-  text-decoration: none;
-  color: #f2f4ff;
-}
+  .nav-button a {
+    text-decoration: none;
+    color: #f2f4ff;
+  }
 </style>

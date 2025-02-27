@@ -1,25 +1,25 @@
 <template>
-    <div class="external-links">
-        <div class="socials">
-            <a :href=imdbURL>
-                <img :src="require('@/assets/imdb.png')" alt="IMDB" />
-            </a>
-            <a :href=igURL>
-                <img :src="require('@/assets/instagram.png')" alt="Instagram" />
-            </a>
-            <a :href=ytURL>
-                <img :src="require('@/assets/youtube.png')" alt="Youtube" />
-            </a>
-            <a :href=liURL>
-                <img :src="require('@/assets/linkedin.png')" alt="LinkedIn" />
-            </a>
-        </div>
+  <div class="external-links">
+    <div class="socials">
+      <a :href=imdbURL>
+          <img :src="require('@/assets/imdb.png')" alt="IMDB" />
+      </a>
+      <a :href=igURL>
+          <img :src="require('@/assets/instagram.png')" alt="Instagram" />
+      </a>
+      <a :href=ytURL>
+          <img :src="require('@/assets/youtube.png')" alt="Youtube" />
+      </a>
+      <a :href=liURL>
+          <img :src="require('@/assets/linkedin.png')" alt="LinkedIn" />
+      </a>
     </div>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'SocialsComponent',
+  export default {
+    name: 'SocialsComponent',
     props: {
       imdbURL: {
         type: String,
@@ -38,29 +38,29 @@
         default: 'https://www.linkedin.com/in/bhp42/'
       }
     }
-    }
+  }
 
 </script>
 
 <style scoped>
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
-.socials a {
-  margin-top: 3%;
-  padding: .5%;
-  transition: transform 0.3s ease;
-}
+  .socials a {
+    margin-top: 3%;
+    padding: .5%;
+    transition: transform 0.3s ease;
+  }
 
-.socials a:hover {
-  transform: scale(1.1);
-}
+  .socials a:hover {
+    transform: scale(1.1);
+  }
 
-.socials img {
-  height: 2.75rem;
-}
+  .socials img {
+    height: 2.75rem;
+  }
 </style>
