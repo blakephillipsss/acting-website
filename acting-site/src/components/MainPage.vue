@@ -27,7 +27,7 @@
       <PhotoGalleryComponent/>
     </div>
     <div class="container-four" id="resume-section">
-      <ResumeComponent pdfUrl="https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Dec%20'24%20Resume-KTP0ab3Bg1S0bB8C1AMusmkdtXL48Z.pdf"/>
+      <ResumeComponent pdfUrl="https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Mar%20%2725%20Resume-w7XXRTCPZp4wmmHQ47t2rrmLqsgLML.pdf"/>
     </div>
     <AttributionComponent/>
   </div>
