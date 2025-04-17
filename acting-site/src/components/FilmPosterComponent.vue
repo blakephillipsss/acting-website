@@ -2,7 +2,7 @@
     <div class="recent-projects">
         <div class="films">
             <a href=filmURL>
-                <img :src="require(`@/assets/${filmImage}`)" :alt="filmTitle">
+                <img :src="require(`@/assets/filmPosters/${filmImage}`)" :alt="filmTitle">
                 <p><b>{{filmTitle}}</b></p>
             </a>
         </div>
@@ -32,8 +32,7 @@
 <style scoped>
     .films {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        /* flex-direction: row; */
         justify-content: center;
         flex-wrap: wrap;
     }
@@ -44,17 +43,19 @@
         text-decoration: underline;
         color: #2c3e50;
         transition: transform 0.3s ease;
+        justify-content: center;
     }
 
-    .films a:hover {
+    .films img:hover {
         transform: scale(1.05);
     }
 
     .films img {
-        height: 20rem;
+        /* display: block; */
         padding: 1rem;
-        display: block;
-        margin: 0 auto;
+        width: 95%;
+        object-fit: cover;
+        justify-content: center;
     }
         
 </style>

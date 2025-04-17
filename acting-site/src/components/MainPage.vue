@@ -9,15 +9,15 @@
     <div class="container-two">
       <AboutMeComponent />
       <h1>Recently Seen In</h1>
+      <FilmPosterComponent
+        filmImage="silenced.jpg"
+        filmTitle="Silenced (Click to watch on YouTube)"
+        filmURL="https://www.youtube.com/watch?v=uiHkiUVnKL8&t=1s"
+      />
       <FilmPosterComponent 
         filmImage="WOR.jpg" 
         filmTitle="When Olive Returned (Click to watch on YouTube)" 
         filmURL="https://www.youtube.com/watch?v=APAB9h2YjFw&t=4s"
-      />
-      <FilmPosterComponent 
-        filmImage="oh_sadie.jpg" 
-        filmTitle="Oh, Sadie! (Coming Soon)" 
-        filmURL=""
       />
     </div>
     <div class="container-three" id="media-section">
