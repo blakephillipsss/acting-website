@@ -1,7 +1,7 @@
 <template>
     <div class="recent-projects">
         <div class="films">
-            <a href=filmURL>
+            <a :href=filmURL>
                 <img :src="require(`@/assets/filmPosters/${filmImage}`)" :alt="filmTitle">
                 <p><b>{{filmTitle}}</b></p>
             </a>

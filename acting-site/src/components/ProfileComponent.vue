@@ -3,10 +3,11 @@
   <div class="profile">
     <h1>{{ name }}</h1>
     <p>{{ pronouns }}</p>
-    <img :src="require('@/assets/Blake H. Phillips Headshot.jpg')" alt="Blake H. Phillips" />
+    <img :src="require('@/assets/Blake H. Phillips Headshot 1.jpg')" alt="Headshot 1" />
+    <img :src="require('@/assets/Blake H. Phillips Headshot 2.jpg')" alt="Headshot 2" />
     <p>{{ title }}</p>
-    <a :href="'mailto:' + email">{{ email }}</a>
-    <p>{{ phone }}</p>
+    <p><a :href="'mailto:' + email">{{ email }}</a></p>
+    <p><a :href="'tel:' + phone">{{ phone }}</a></p>
   </div>
 </template>
 

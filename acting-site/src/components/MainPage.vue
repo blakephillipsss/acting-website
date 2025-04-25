@@ -10,20 +10,22 @@
       <AboutMeComponent />
       <h1>Recently Seen In</h1>
       <FilmPosterComponent
+        filmImage="TheUnknownSoldier.jpg"
+        filmTitle="The Unknown Soldier (Post-Production)"
+        filmURL="https://www.imdb.com/title/tt34955088/"
+      />
+      <FilmPosterComponent
         filmImage="silenced.jpg"
         filmTitle="Silenced (Click to watch on YouTube)"
         filmURL="https://www.youtube.com/watch?v=uiHkiUVnKL8&t=1s"
-      />
-      <FilmPosterComponent 
-        filmImage="WOR.jpg" 
-        filmTitle="When Olive Returned (Click to watch on YouTube)" 
-        filmURL="https://www.youtube.com/watch?v=APAB9h2YjFw&t=4s"
       />
     </div>
     <div class="container-three" id="media-section">
       <h1>Demo Footage and Photos</h1>
       <!-- Main Demo Tape -->
-      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/j_Mwf_5Li3k?si=rV16PEZumwtndrOx"/>
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/ErfwbnO5wrM?si=7aRm1tlELGuXf5tE"/>
+      <br>
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/j_Mwf_5Li3k?si=HqVvvPLmMiXvM2jy"/>
       <PhotoGalleryComponent/>
     </div>
     <div class="container-four" id="resume-section">
