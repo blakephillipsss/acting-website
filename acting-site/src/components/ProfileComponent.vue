@@ -6,6 +6,7 @@
     <img :src="require('@/assets/Blake H. Phillips Headshot 1.jpg')" alt="Headshot 1" />
     <img :src="require('@/assets/Blake H. Phillips Headshot 2.jpg')" alt="Headshot 2" />
     <p>{{ title }}</p>
+    <p>Rep: Megan McGregor at Invision Artists</p>
     <p><a :href="'mailto:' + email">{{ email }}</a></p>
     <p><a :href="'tel:' + phone">{{ phone }}</a></p>
   </div>
@@ -29,11 +30,11 @@
       },
       email: {
         type: String,
-        default: 'acting@blakehphillips.com'
+        default: 'meganmcgregor@invisionartists.ca'
       },
       phone: {
         type: String,
-        default: '+1 (416) 818-1158'
+        default: '+1 (416) 925-9009'
       }
     }
   }
