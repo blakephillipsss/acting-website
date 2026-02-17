@@ -3,8 +3,10 @@
   <div class="profile">
     <h1>{{ name }}</h1>
     <p>{{ pronouns }}</p>
-    <img :src="require('@/assets/Blake H. Phillips Headshot 1.jpg')" alt="Headshot 1" />
-    <img :src="require('@/assets/Blake H. Phillips Headshot 2.jpg')" alt="Headshot 2" />
+    <img :src="require('@/assets/Blake_H_Phillips_1.jpg')" alt="Headshot 1" />
+    <img :src="require('@/assets/Blake_H_Phillips_2.jpg')" alt="Headshot 2" />
+    <img :src="require('@/assets/Blake_H_Phillips_3.jpg')" alt="Headshot 3" />
+    <img :src="require('@/assets/Blake_H_Phillips_4.jpg')" alt="Headshot 4" />
     <p>{{ title }}</p>
     <p>Rep: Megan McGregor at Invision Artists</p>
     <p><a :href="'mailto:' + email">{{ email }}</a></p>
