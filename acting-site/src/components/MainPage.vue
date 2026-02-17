@@ -12,6 +12,7 @@
       <h3>From scene study with John Gordon at The Dirt Underneath</h3>
       <p>Want to see footage from my recent unreleased work? Shoot me a message <a :href="'mailto:acting@blakehphillips.com'">here</a> and I'll send you a private link!</p>
       <!-- Main Demo Tape -->
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/wznk4hxcT6M?si=JAXHvhD9QgFKfdD5"/>
       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/mD1yOIPnbdw?si=YOgia9xEQUPS7d5T"/>
       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/Ugamf5roUOk?si=9afBVQBuerjWa1H1"/>
       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/SvnM6_b_Czs?si=jvHV48HLRq15seqc"/>
