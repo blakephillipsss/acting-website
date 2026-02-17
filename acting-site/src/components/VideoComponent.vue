@@ -34,6 +34,7 @@
         height: 0;
         overflow: hidden;
         width: 100%;
+        margin-bottom: 20px;
     }
 
     .video-wrapper iframe {

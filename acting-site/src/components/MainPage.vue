@@ -8,20 +8,12 @@
     </div>
     <div class="container-two">
       <AboutMeComponent />
-      <!-- <h1>Recently Seen In</h1> -->
-      <!-- <FilmPosterComponent
-        filmImage="TheUnknownSoldier.jpg"
-        filmTitle="The Unknown Soldier (Post-Production)"
-        filmURL="https://www.imdb.com/title/tt34955088/"
-      />
-      <FilmPosterComponent
-        filmImage="silenced.jpg"
-        filmTitle="Silenced (Click to watch on YouTube)"
-        filmURL="https://www.youtube.com/watch?v=uiHkiUVnKL8&t=1s"
-      /> -->
-      <h1>Demo Footage and Clips</h1>
+      <h1>Clips from Class</h1>
+      <h3>From scene study with John Gordon at The Dirt Underneath</h3>
+      <p>Want to see footage from my recent unreleased work? Shoot me a message <a :href="'mailto:acting@blakehphillips.com'">here</a> and I'll send you a private link!</p>
       <!-- Main Demo Tape -->
-       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/mD1yOIPnbdw?si=YOgia9xEQUPS7d5T"/>
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/mD1yOIPnbdw?si=YOgia9xEQUPS7d5T"/>
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/Ugamf5roUOk?si=9afBVQBuerjWa1H1"/>
       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/SvnM6_b_Czs?si=jvHV48HLRq15seqc"/>
       <!-- <br> -->
       <!-- <PhotoGalleryComponent/> -->
@@ -85,14 +77,14 @@
 
   .container-one {
     background-color: #304C89;
-    max-width: 30%;
+    /* max-width: 30%; */
     padding: 1%;
     margin: .5% 0.5% 2%;
   }
 
   .container-two {
     background-color: #F2F4FF;
-    max-width: 34%;
+    /* max-width: 34%; */
     margin: 0.5%;
   }
 
