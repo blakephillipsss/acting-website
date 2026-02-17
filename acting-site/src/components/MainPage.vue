@@ -8,8 +8,8 @@
     </div>
     <div class="container-two">
       <AboutMeComponent />
-      <h1>Recently Seen In</h1>
-      <FilmPosterComponent
+      <!-- <h1>Recently Seen In</h1> -->
+      <!-- <FilmPosterComponent
         filmImage="TheUnknownSoldier.jpg"
         filmTitle="The Unknown Soldier (Post-Production)"
         filmURL="https://www.imdb.com/title/tt34955088/"
@@ -18,18 +18,16 @@
         filmImage="silenced.jpg"
         filmTitle="Silenced (Click to watch on YouTube)"
         filmURL="https://www.youtube.com/watch?v=uiHkiUVnKL8&t=1s"
-      />
-    </div>
-    <div class="container-three" id="media-section">
-      <h1>Demo Footage and Photos</h1>
+      /> -->
+      <h1>Demo Footage and Clips</h1>
       <!-- Main Demo Tape -->
-      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/ErfwbnO5wrM?si=7aRm1tlELGuXf5tE"/>
-      <br>
-      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/j_Mwf_5Li3k?si=HqVvvPLmMiXvM2jy"/>
-      <PhotoGalleryComponent/>
+       <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/mD1yOIPnbdw?si=YOgia9xEQUPS7d5T"/>
+      <VideoComponent youtubeEmbedUrl="https://www.youtube.com/embed/SvnM6_b_Czs?si=jvHV48HLRq15seqc"/>
+      <!-- <br> -->
+      <!-- <PhotoGalleryComponent/> -->
     </div>
     <div class="container-four" id="resume-section">
-      <ResumeComponent pdfUrl="https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/Blake%20H.%20Phillips%20Jun%20%2725%20Resume-JwgicYsuWe2S0jbiTq6z1lWEpu8SVD.pdf"/>
+      <ResumeComponent pdfUrl="https://x4pg0p6fkhvy4kqt.public.blob.vercel-storage.com/20260213_Blake_H_Phillips_Resume.pdf"/>
     </div>
     <AttributionComponent/>
   </div>
@@ -41,8 +39,8 @@
   import NavComponent from './NavComponent.vue'
   import SocialsComponent from './SocialsComponent.vue';
   import AboutMeComponent from './AboutMeComponent.vue'
-  import FilmPosterComponent from './FilmPosterComponent.vue';
-  import PhotoGalleryComponent from './PhotoGalleryComponent.vue';
+  // import FilmPosterComponent from './FilmPosterComponent.vue';
+  // import PhotoGalleryComponent from './PhotoGalleryComponent.vue';
   import VideoComponent from './VideoComponent.vue';
   import ResumeComponent from './ResumeComponent.vue'
   import AttributionComponent from './AttributionComponent.vue';
@@ -54,8 +52,8 @@
       NavComponent,
       SocialsComponent,
       AboutMeComponent,
-      FilmPosterComponent,
-      PhotoGalleryComponent,
+      // FilmPosterComponent,
+      // PhotoGalleryComponent,
       VideoComponent,
       ResumeComponent,
       AttributionComponent
